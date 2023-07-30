@@ -1,0 +1,1 @@
+[{"pk": 1, "model": "products.product", "fields": {"sku": "001", "name": "Nic Shot", "description": "Nic Shot to add to your shortfill.", "price": 1.99, "category": 3, "rating": 4.6, "image_url": "../media/", "image": "nic_shot.jpeg"}}]
