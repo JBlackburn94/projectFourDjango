@@ -1,8 +1,3 @@
-from django.shortcuts import render
-
-# Create your views here.
-
-
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 
@@ -19,6 +14,8 @@ def checkout(request):
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
+        'stripe_public_key': 'pk_test_51NhAukLbDEqfuRFbFwYJZCKgnWKOMbrVz0p6JQtVjPIOIgAohBYY4Ir4pNDEwabuF35vYzyFRxoj2p6eEfRlge5x000muekjML',
+        'client_secret': 'test client secret',
     }
 
     return render(request, template, context)
