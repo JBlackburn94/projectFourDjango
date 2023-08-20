@@ -1,4 +1,5 @@
 import os
+import dj_database_url
 
 """
 Django settings for projectFourDjango project.
@@ -27,7 +28,7 @@ SECRET_KEY = 'django-insecure-a#db_5x&p(u_&)wb*-nn-d)j=8-nbh_3*e&==4xt*vy$a%e6#^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-jblackburn9-projectfour-q9swzi9prf4.ws-eu104.gitpod.io']
+ALLOWED_HOSTS = ['project-four-django.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -123,13 +124,17 @@ WSGI_APPLICATION = 'projectFourDjango.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
-
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
