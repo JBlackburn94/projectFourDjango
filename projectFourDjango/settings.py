@@ -28,6 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
+
 ALLOWED_HOSTS = ['project-four-django-8dfc14207eac.herokuapp.com', 'localhost']
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
