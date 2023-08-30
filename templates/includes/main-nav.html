@@ -17,10 +17,10 @@
                 E-Liquid
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Salts</a>
-                <a href="" class="dropdown-item">Shortfill</a>
-                <a href="" class="dropdown-item">Nic Shots</a>
-                <a href="" class="dropdown-item">Concentrates</a>
+                <a href="{% url 'products' %}?category=salts" class="dropdown-item">Salts</a>
+                <a href="{% url 'products' %}?category=shortfill" class="dropdown-item">Shortfill</a>
+                <a href="{% url 'products' %}?category=nic_shots" class="dropdown-item">Nic Shots</a>
+                <a href="{% url 'products' %}?category=concentrates" class="dropdown-item">Concentrates</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Kits
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Tanks</a>
-                <a href="" class="dropdown-item">Mods</a>
-                <a href="" class="dropdown-item">Coils</a>
+                <a href="{% url 'products' %}?category=tanks" class="dropdown-item">Tanks</a>
+                <a href="{% url 'products' %}?category=mods" class="dropdown-item">Mods</a>
+                <a href="{% url 'products' %}?category=coils" class="dropdown-item">Coils</a>
             </div>
         </li>
 
@@ -40,10 +40,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=all_specials" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
