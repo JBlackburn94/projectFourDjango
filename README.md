@@ -1,108 +1,118 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Jason Blackburn - Milestone Project 4 JB Vapes
 
-Welcome Jason Blackburn,
+This site is to be used by the user to browse and purchase vape products.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Table of Contents
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+1. [Business](#business)
+2. [Colour Scheme](#color-scheme)
+3. [Wireframes](#wireframes)
+4. [Technologies Used](#technologies-used)
+5. [Testing](#testing)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
+8. [Media](#media)
 
-## Gitpod Reminders
+# Business <a name="business"></a>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The business goals of this page are to provide the user with an ecommerce store in order to browse and purchase vape products.
 
-`python3 -m http.server`
+## Site Owners Goals
 
-A blue button should appear to click: _Make Public_,
+The site owners goals of this page are to provide clear weather data using the Open Weather API.
 
-Another blue button should appear to click: _Open Browser_.
+# Colour Scheme <a name="color-scheme"></a>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+This site uses a minimalist colour scheme of mainly black and white, with various bold coloured buttons to make it easier for important options to stand out to the user. The main hero image is bold in colour and the remainder of the site upholds a professional style. 
 
-A blue button should appear to click: _Make Public_,
+# Wireframes <a name="wireframes"></a>
 
-Another blue button should appear to click: _Open Browser_.
+I have made wire frames for desktop and mobile. These can be seen below. This app has basically the same layout on mobile and desktop due to the simplicity of the UI.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![image](<readMeImgs/projectFourWireframe.pdf>)
 
-To log into the Heroku toolbelt CLI:
+# Technologies Used <a name="technologies-used"></a>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+During the build for this page I used:
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+HTML
 
-------
+The project uses HTML to create the content.
 
-## Release History
+CSS
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The project uses CSS to style some of the elements, and also makes some of the elements responsive.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+JavaScript
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The project uses JavaScipt to handle the interactivity and functionality of the front end. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Python
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+This project uses Python to handle the backend of the site.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Django
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+This project uses the python framework Django including some of its built in apps etc.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+GitPod
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+I used GitPod to build this project.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+[GitHub](https://github.com/JBlackburn94/weatherApp)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+I have used GitHub to push and deploy this project.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+# Testing <a name="testing"></a>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+“PLEASE NOTE - There is an error showing. The error claims that some external font/icon files have not been loaded. But having investigated this with my mentor, we can clearly see all items have loaded and this error is incorrect. There is also an error should an incorrect location or spelling mistake entered. However, I have accounted for this by using a catch statement, upon entering a mistake the user will be prompted with an alert to make them aware there were no results found. -”
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+This project was tested using:
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+[W3 HTML Validator](https://validator.w3.org/)
 
-------
+The W3 Schools HTML Validator - returning 0 errors.
 
-## FAQ about the uptime script
+[W3 CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-**Why have you added this script?**
+The W3 Schools CSS Validator - returning 0 errors.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+[Google Chrome Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
 
-**How will this affect me?**
+Google Chrome Lighthouse was used to score the performance and accesibility of this site.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+The code was also ran through JSLint, a number of errors were present but they were mainly due to empty white space etc. After fixing the layout issues I was only left with errors that weren't major issues.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+I also ran manual tests on this project and worked towards fixing any errors I found. The main problem I found was upon entering an incorrect location name or a spelling mistake, an error 404 would be present in the console. I fixed this by implementing error handling, using a catch statement to alert the user when they're search returned no data, the alert will then ask them to reset, check again and finally check their spelling.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+| User Story                                                                                              | User Case                                                                                                                                                      | Pass/Fail |     |     |
+| ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --- | --- |
+| User Story 001 - (Consumer) As a consumer I want to be able to access weather data by location name.    | User case 001-001 Easily access any weather data for any location by typing the name into the input field and pressing search or enter.                        | Pass      |     |     |
+|                                                                                                         | User case 001-002 Locations can also be searched by post code.                                                                                                 | Pass      |     |     |
+| User Story 002 - (Consumer) As a consumer I want to be able to quickly reset the data and search again. | User case 002 - 001 The data is easily reset using the clearly labelled reset button at the bottom of the container. This will also reset clear the input box. | Pass      |     |     |
 
-**So….?**
+# Deployment <a name="deployment"></a>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+GitPod -> GitHub 
 
-**Can I opt out?**
+## GitHub
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Create GitHub Repository using VS Code. Commited and pushed all content from VS Code to Github.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## GitHub Pages
 
-**Anything more?**
+Completed site deployed to GitHub Pages.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+# Credits <a name="credits"></a>
 
----
+[Stack Overflow](https://stackoverflow.com/)
 
-Happy coding!
+I used Stack Overflow to research ways to reset the data and clear the input field.
+
+# Media <a name="media"></a>
+
+[Background Image](https://unsplash.com/)
+
+## Fonts
+
+[Outfit](https://fonts.google.com/specimen/Outfit)
