@@ -2,6 +2,8 @@
 
 This site is to be used by the user to browse and purchase vape products.
 
+Deployed Site: https://project-four-django-8dfc14207eac.herokuapp.com/
+
 # Table of Contents
 
 1. [Business](#business)
@@ -29,7 +31,7 @@ This site uses a minimalist colour scheme of mainly black and white, with variou
 
 I have made wire frames for desktop and mobile. These can be seen below. This app has basically the same layout on mobile and desktop due to the simplicity of the UI.
 
-![image](<readMeImgs/projectFourWireframe.pdf>)
+![image](<readMeImgs/projectFourWireframe.png>)
 
 # Technologies Used <a name="technologies-used"></a>
 
@@ -59,7 +61,7 @@ GitPod
 
 I used GitPod to build this project.
 
-[GitHub](https://github.com/JBlackburn94/weatherApp)
+GitHub
 
 I have used GitHub to push and deploy this project.
 
@@ -87,32 +89,42 @@ I also ran manual tests on this project and worked towards fixing any errors I f
 
 | User Story                                                                                              | User Case                                                                                                                                                      | Pass/Fail |     |     |
 | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --- | --- |
-| User Story 001 - (Consumer) As a consumer I want to be able to access weather data by location name.    | User case 001-001 Easily access any weather data for any location by typing the name into the input field and pressing search or enter.                        | Pass      |     |     |
-|                                                                                                         | User case 001-002 Locations can also be searched by post code.                                                                                                 | Pass      |     |     |
-| User Story 002 - (Consumer) As a consumer I want to be able to quickly reset the data and search again. | User case 002 - 001 The data is easily reset using the clearly labelled reset button at the bottom of the container. This will also reset clear the input box. | Pass      |     |     |
+| User Story 001 - (Consumer) As a consumer I want to be able to add, update and remove an item from my basket.    | User case 001-001 All products can be added, updated and removed from the basket with ease, all buttons to update and delete are easily located and work as they should.                        | Pass      |     |     |
+|
+| User Story 002 - (Consumer) As a consumer I want to be able to register for an account, log into my account and save my details for next time. | User case 002 - 001 The consumer can register for an account, then use the account details to login. Once logged in, the user can then either register their address details in the account section or can save their address details after initial purchase. | Pass      |     |     |
 
 # Deployment <a name="deployment"></a>
 
-GitPod -> GitHub 
+GitPod -> GitHub -> Heroku (Static files loaded through AWS and ElephantSQL used to manage the databases.)
 
 ## GitHub
 
 Create GitHub Repository using VS Code. Commited and pushed all content from VS Code to Github.
 
-## GitHub Pages
+## Heroku
 
-Completed site deployed to GitHub Pages.
+Completed site deployed to Heroku.
+
+## AWS
+
+I used Amazon AWS to store static files and media.
+
+## Elephant SQL
+
+I used Elephant SQL to manage my databases. I have two database models, one for categories and one for products. Products is a child of categories.
+
+## Database Layout
+
+![image](<projectFourDatabaseModel.png>)
 
 # Credits <a name="credits"></a>
 
 [Stack Overflow](https://stackoverflow.com/)
 
-I used Stack Overflow to research ways to reset the data and clear the input field.
+I used Stack Overflow to research different bugs on the build.
 
-# Media <a name="media"></a>
+Code Institute
 
-[Background Image](https://unsplash.com/)
+I used Code Institute materials to help with some of the build and deployment.
 
-## Fonts
 
-[Outfit](https://fonts.google.com/specimen/Outfit)
