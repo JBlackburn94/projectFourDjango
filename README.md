@@ -115,7 +115,7 @@ I used Elephant SQL to manage my databases. I have two database models, one for 
 
 ## Database Layout
 
-![image](<projectFourDatabaseModel.png>)
+![image](<readMeImgs/projectFourDatabaseModel.png>)
 
 # Credits <a name="credits"></a>
 
