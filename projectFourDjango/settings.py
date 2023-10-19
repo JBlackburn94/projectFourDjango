@@ -30,7 +30,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['project-four-django-8dfc14207eac.herokuapp.com', 'localhost']
 
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_EMAIL_VERIFICATION = ''
 
 
 # Application definition
