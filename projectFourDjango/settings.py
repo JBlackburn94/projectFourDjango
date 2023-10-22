@@ -30,7 +30,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['project-four-django-8dfc14207eac.herokuapp.com', 'localhost']
 
-ACCOUNT_EMAIL_VERIFICATION = 'optional'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
 # Application definition
@@ -115,7 +115,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
